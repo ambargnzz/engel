@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    .packs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crear dos columnas en pantallas pequeñas */
+        gap: 10px; /* Añadir espacio entre las cajas */
+    }
+
+    .menu-item {
+        width: 100%; /* Ajustar el ancho de los elementos al 100% del espacio disponible */
+    }
+
+    button {
+        width: 100%; /* Botones también al 100% del ancho de la caja */
+    }
+}
+
