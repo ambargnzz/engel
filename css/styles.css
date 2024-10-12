@@ -32,6 +32,14 @@ button:hover {
     background-color: #6e4f33; /* Cambia el color al pasar el cursor sobre el botón */
 }
 
+
+
+.packs button {
+    background-color: #875a2e3d;
+    padding: 8px 15px;
+    font-size: 13px;
+
+}
 .menu-item {
     width: 200px; /* Asegura que todos tengan el mismo ancho */
     height: auto; /* Esto permitirá que el contenido ajuste el tamaño */
@@ -43,9 +51,50 @@ button:hover {
     text-align: center;
 }
 
-.packs button {
-    background-color: #875a2e3d;
-    padding: 8px 15px;
-    font-size: 13px;
+.container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    height: 100vh; /* O el tamaño que necesites */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
 
+button {
+    margin-top: 20px; /* Añade espacio entre el texto y el botón */
+    padding: 10px 20px;
+    background-color: #805a3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos generales para pantallas grandes: una sola columna */
+
+
+
+
+
+/* Estilos generales para pantallas grandes: se verá en una sola columna */
+
+
+/* Ajuste de los elementos individuales */
+.menu-item {
+    
+    margin: 15px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Asegura que los márgenes y padding no afecten el tamaño */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 1 1 calc(50% - 20px); /* Cada elemento ocupa el 50% del ancho con un pequeño margen */
+        margin: 1px; /* Ajusta el margen para evitar espacios grandes */
+    }
 }
